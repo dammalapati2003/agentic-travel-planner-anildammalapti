@@ -35,11 +35,6 @@ def weather_agent(state):
         # Save results in state
         state["weather"] = weather_data
 
-        # Optional: print summary for demo clarity
-        print("\n Weather Info:")
-        for w in weather_data:
-            print(f"• {w['day']}: {w['condition']}, {w['temp']}°C")
-
     except Exception as e:
         state["weather_error"] = f"Weather agent failed: {e}"
         state["weather"] = []

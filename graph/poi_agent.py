@@ -38,14 +38,6 @@ def poi_agent(state, override_pref=None):
         # Store results in state
         state["pois"] = pois
 
-        # Print summary for clarity
-        print("\n Points of Interest (based on your preference):")
-        for p in pois:
-            print(
-                f"• {p['name']} – {p['desc']} | Visit Time: {p['visit_time']} | "
-                f"Cost: {p['cost']} | Travel to next: {p['travel_time_to_next']}"
-            )
-
     except Exception as e:
         state["poi_error"] = f"POI agent failed: {e}"
         state["pois"] = []

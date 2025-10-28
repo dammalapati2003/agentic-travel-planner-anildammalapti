@@ -13,8 +13,8 @@ def input_handler():
                 print("\n Hi there! I can help you plan your trip.")
                 print("Try something like:")
                 print('    "Plan a 3-day trip to Tokyo starting after 2 days."')
-                print('    "What’s the weather in London next week?"')
-                print('    "Show me tourist attractions in Paris."')
+                print('"Plan a 4-day trip to Paris after 2 days."')
+                print(' "Plan a trip to Tokyo for 3 days focusing on food."')
                 continue  # ask again
 
             # Make sure the input sounds travel related
@@ -22,8 +22,8 @@ def input_handler():
                 print("\n That doesn’t sound like a travel request.")
                 print("Try one of these examples:")
                 print('    "Plan a 2-day trip to New Delhi starting tomorrow."')
-                print('    "Check weather in Paris next week."')
-                print('    "Show me tourist attractions in Tokyo."')
+                print('"Plan a 4-day trip to Paris after 2 days."')
+                print(' "Plan a trip to Tokyo for 3 days focusing on food."')
                 continue  # re-ask
 
             state = {"user_input": user_input}
