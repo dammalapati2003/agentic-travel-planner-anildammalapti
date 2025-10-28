@@ -42,9 +42,8 @@ def llm_decision_node(state):
         print("\n I didn’t detect a travel-related request.")
         print("Try one of these examples:")
         print('    "Plan a 2-day trip to New Delhi starting tomorrow."')
-        print('    "What’s the weather in Paris next week?"')
-        print('    "Show me tourist attractions in Tokyo."')
-        print('    "Replan my Dubai trip if the weather changes."')
+        print('"Plan a 4-day trip to Paris after 2 days."')
+        print(' "Plan a trip to Tokyo for 3 days focusing on food."')
         return state  
 
     print(f" Tools selected by LLM: {', '.join(state['next_agents'])}")
