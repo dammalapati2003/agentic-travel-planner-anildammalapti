@@ -141,3 +141,6 @@ Day   Morning                Afternoon              Evening               Weathe
 4. Include user preferences for budget or travel style.  
 5. Build a web or Streamlit UI for easier interaction.
 
+### Demo Video
+1. https://drive.google.com/file/d/1rkQvxNwPnLLgVaevPy5IrqZhTT9MEkIJ/view?usp=sharing
+
